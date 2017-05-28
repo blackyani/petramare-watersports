@@ -11,11 +11,22 @@
 
     <title>Adrenaline Watersports</title>
 
+    <!-- 1. Link to jQuery (1.8 or later), -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+
+    <!-- fotorama.css & fotorama.js. -->
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon%20(1).ico" type="image/x-icon">
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Fotorama -->
+    <link href="css/fotorama.css" rel="stylesheet">
+
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -247,7 +258,9 @@
         </div>
     </aside>
 
-    <!-- Portfolio -->
+
+
+    <!-- Portfolio-Slider -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
@@ -255,33 +268,32 @@
                     <h2>Our Work</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/18742540_10158796937530385_501124274_o.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/12085152_160962497582333_1333946232_o.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/14115454_1052337301518312_1068126461604056785_o.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/18721226_10158796937585385_2086669003_o.jpg">
-                                </a>
-                            </div>
+                        <div class="fotorama col-md-12" data-width="1000" data-ratio="700/467" data-max-width="100%"
+                             data-nav="thumbs"
+                             data-allowfullscreen="true"
+                             data-autoplay="true">
+                            <img src="img/imgslider/12085152_160962497582333_1333946232_o.jpg">
+                            <img src="img/imgslider/14115454_1052337301518312_1068126461604056785_o.jpg">
+                            <img src="img/imgslider/14990965_1119462064805835_2456288833927347645_o.jpg">
+                            <img src="img/imgslider/14991000_1119466428138732_5135630026983198743_o.jpg">
+                            <img src="img/imgslider/14991353_1119460944805947_1537732651121134695_o.jpg">
+                            <img src="img/imgslider/15025431_1119461398139235_1071387421289740111_o.jpg">
+                            <img src="img/imgslider/18718359_10158796965085385_2129483887_n.jpg">
+                            <img src="img/imgslider/18718493_10158796965120385_2128823504_n.jpg">
+                            <img src="img/imgslider/18720955_10158796965210385_699350234_o.jpg">
+                            <img src="img/imgslider/18721188_10158796948985385_118309206_o.jpg">
+                            <img src="img/imgslider/18721226_10158796937585385_2086669003_o.jpg">
+                            <img src="img/imgslider/18721299_10158796949370385_1836620171_o.jpg">
+                            <img src="img/imgslider/18741414_10158796948875385_1196877550_n.jpg">
+                            <img src="img/imgslider/18741505_10158796948965385_2042000526_n.jpg">
+                            <img src="img/imgslider/18741791_10158796948895385_1320114006_n.jpg">
+                            <img src="img/imgslider/18742375_10158796937380385_36024414_o.jpg">
+                            <img src="img/imgslider/18742380_10158796949190385_1616849556_o.jpg">
+                            <img src="img/imgslider/18742453_10158796949605385_449150033_o.jpg">
+                            <img src="img/imgslider/18742540_10158796937530385_501124274_o.jpg">
+                            <img src="img/imgslider/18742633_10158796937520385_60831898_o.jpg">
+                            <img src="img/imgslider/18742638_10158796949415385_914997658_o.jpg">
+                            <img src="img/imgslider/18765345_10158796937515385_117230804_o.jpg">
                         </div>
                     </div>
                     <!-- /.row (nested) -->
@@ -293,6 +305,7 @@
         </div>
         <!-- /.container -->
     </section>
+
 
     <!-- Map -->
     <section id="contact" class="map">
@@ -314,7 +327,7 @@
                         <br>Ierapetra watersports</p>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-phone fa-fw"></i>+30 694 476 6507</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">Pacoaris@hotmail.com</a>
                         </li>
                     </ul>
                     <br>
@@ -334,6 +347,7 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
