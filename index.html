@@ -32,13 +32,6 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body>
@@ -82,7 +75,7 @@
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center about__text-container">
                     <h2>We provide the best service! Your safety our top  priority</h2>
                     <p class="lead">You can join us on
                     <a target="_blank" href="https://www.facebook.com/Ierapetra-watersports-in-PETRA-MARE-HOTEL-382000668551982/?pnref=story">Facebook</a>.</p>
@@ -176,8 +169,8 @@
                 <div class="modal-body text-center">
                     <img src="img/18742361_10158796937365385_844120252_o.jpg" alt="JetSki" class="img-responsive img-rounded">
                     <p>Just Imagine skimming across Cretan turquoise waters on Yamaha 1100cc, the wind blowing through your hair, while you take in all the beautiful scenery and sites around you.
-                       Our Jet Ski Adventures offer you a unique and fun experience which is suitable for persons of all ages and skill levels.
-                       Whether you’re a novice or an experienced rider, we have a Jet Ski Adventure that will suit your needs and have you coming back for more!</p>
+                        Our Jet Ski Adventures offer you a unique and fun experience which is suitable for persons of all ages and skill levels.
+                        Whether you’re a novice or an experienced rider, we have a Jet Ski Adventure that will suit your needs and have you coming back for more!</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -241,7 +234,7 @@
                 <div class="modal-body text-center">
                     <img src="img/18742348_10158796937590385_1403980396_o.jpg" alt="Water-Ski Wake-Board" class="img-responsive img-rounded">
                     <p>Seize the opportunity to experience the ultimate waterski/wakeboard vacation.  We offer lessons/coaching suitable for persons of all ages and skill levels.
-                       If you are looking for personalized coaching, this is the place for you!</p>
+                        If you are looking for personalized coaching, this is the place for you!</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -269,9 +262,9 @@
                     <hr class="small">
                     <div class="row">
                         <div class="fotorama col-md-12" data-width="1000" data-ratio="700/467" data-max-width="100%"
-                             data-nav="thumbs"
-                             data-allowfullscreen="true"
-                             data-autoplay="true">
+                            data-nav="thumbs"
+                            data-allowfullscreen="true"
+                            data-autoplay="true">
                             <img src="img/imgslider/12085152_160962497582333_1333946232_o.jpg">
                             <img src="img/imgslider/14115454_1052337301518312_1068126461604056785_o.jpg">
                             <img src="img/imgslider/14990965_1119462064805835_2456288833927347645_o.jpg">
@@ -344,7 +337,7 @@
 
                     </ul>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; blackyani 2017</p>
+                    <p class="text-muted">Copyright &copy; <a href="https://www.facebook.com/profile.php?id=100010057509955">blackyani</a>  2017</p>
                 </div>
             </div>
         </div>
@@ -354,83 +347,11 @@
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
-    // Disable Google Maps scrolling
-    // See http://stackoverflow.com/a/25904582/1607849
-    // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function(event) {
-        var that = $(this);
-        that.on('click', onMapClickHandler);
-        that.off('mouseleave', onMapMouseleaveHandler);
-        that.find('iframe').css("pointer-events", "none");
-    }
-    var onMapClickHandler = function(event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-    $('.map').on('click', onMapClickHandler);
-    </script>
+    <!-- Adding scrolling plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
